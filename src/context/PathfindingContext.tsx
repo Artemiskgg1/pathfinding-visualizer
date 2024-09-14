@@ -1,7 +1,10 @@
 import { createContext, useState } from "react";
 import { AlgorithmType, GridType, MazeType } from "../utils/types";
 import { createGrid } from "../utils/helpers";
-import { START_TILE_CONFIGURATION } from "../utils/constants";
+import {
+  END_TILE_CONFIGURATION,
+  START_TILE_CONFIGURATION,
+} from "../utils/constants";
 
 interface PathfindingContextInterface {
   algorithm: AlgorithmType;
@@ -26,7 +29,7 @@ export const PathfindingProvider = ({
   const [algorithm, setAlgorithm] = useState<AlgorithmType>("BFS");
   const [maze, setMaze] = useState<MazeType>("NONE");
   const [grid, setGrid] = useState<GridType>(
-    createGrid(START_TILE_CONFIGURATION, START_TILE_CONFIGURATION)
+    createGrid(START_TILE_CONFIGURATION, END_TILE_CONFIGURATION)
   );
   const [isGraphVisualized, setIsGraphVisualized] = useState<boolean>(false);
 
