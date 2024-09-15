@@ -93,7 +93,7 @@ export function Nav() {
             <PlayButton
               isDisabled={isDisabled}
               isGraphVisualized={isGraphVisualized}
-              handlerRunVisualizer={() => {}}
+              handlerRunVisualizer={handlerRunVisualizer}
             />
           </div>
         </div>
