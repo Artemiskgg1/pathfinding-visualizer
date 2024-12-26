@@ -45,7 +45,7 @@ export const MAZES: MazeSelectType[] = [
   { name: "Recursive Division", value: "RECURSIVE_DIVISION" },
 ];
 
-export const PATHFINDING_ALGORITHMS : AlgorithmSelectType[] = [
+export const PATHFINDING_ALGORITHMS: AlgorithmSelectType[] = [
   { name: "Dijkstra", value: "DIJKSTRA" },
   { name: "A*", value: "A_STAR" },
   { name: "Breadth First Search", value: "BFS" },
@@ -58,3 +58,4 @@ export const SPEEDS: SpeedSelectType[] = [
 ];
 
 export const SLEEP_TIME = 8;
+export const EXTENDED_SLEEP_TIME = 30;
